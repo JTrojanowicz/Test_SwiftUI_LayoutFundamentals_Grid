@@ -31,14 +31,17 @@ struct ContentView: View {
                     Text("Row 1")
                     ForEach(0..<2) { _ in Color.red } // flexible Color views share the remaining space offered by the grid’s parent view equally.
                 }
+//                .border(.primary) // this will draw the border over every cell
                 GridRow {
                     Text("Row 2")
                     ForEach(0..<5) { _ in Color.green }
                 }
+//                .border(.primary) // this will draw the border over every cell
                 GridRow {
                     Text("Row 3")
                     ForEach(0..<4) { _ in Color.blue }
                 }
+//                .border(.primary) // this will draw the border over every cell
             }
             
             Divider()
